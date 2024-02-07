@@ -1,0 +1,14 @@
+﻿@{
+    @* 文字列Hoge *@
+    var hoge = new string[] { "R", "a", "z", "o", "r" };
+}
+
+<h2>Hello World</h2>
+
+<ul>
+    @{ foreach (var s in hoge)
+        {
+            <li>@s</li>
+        }
+    }
+</ul>

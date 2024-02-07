@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MVC_TEST.Models.HelloWorldModel>
+
+<h2>Model Test</h2>
+
+@foreach (var m in Model)
+{
+    @Html.DisplayFor(modelItem => m.id)
+    <br />
+    @Html.DisplayFor(modelItem => m.Name)
+    <br />
+    @Html.DisplayFor(modelItem => m.Price)
+    <br />
+    <hr />
+}
